@@ -1,0 +1,45 @@
+package com.accioproj.bookMyShow.Requests;
+
+import com.accioproj.bookMyShow.Entity.Movie;
+import com.accioproj.bookMyShow.Entity.Theater;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+
+public class addShowRqst {
+
+    private LocalDate showDate;
+    private LocalTime showTime;
+    private String movieName;
+    private Integer theaterId;
+	public LocalDate getShowDate() {
+		return showDate;
+	}
+	public void setShowDate(LocalDate showDate) {
+		this.showDate = showDate;
+	}
+	public LocalTime getShowTime() {
+		return showTime;
+	}
+	public void setShowTime(LocalTime showTime) {
+		this.showTime = showTime;
+	}
+	public String getMovieName() {
+		return movieName;
+	}
+	public void setMovieName(String movieName) {
+		this.movieName = movieName;
+	}
+	public Integer getTheaterId() {
+		return theaterId;
+	}
+	public void setTheaterId(Integer theaterId) {
+		this.theaterId = theaterId;
+	}
+    
+}
